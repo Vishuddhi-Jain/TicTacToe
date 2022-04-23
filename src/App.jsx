@@ -11,7 +11,7 @@ const App = () => {
   const winner = calculateWinner(board);
   const message = winner
     ? `Winner is ${winner}`
-    : `Next player is ${isXNext ? 'X' : 'O'}`;
+    : ` Player  ${isXNext ? 'X' : 'O'} turn`;
 
   const handleSquareClick = position => {
     if (board[position] || winner) {
